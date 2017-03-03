@@ -22,4 +22,5 @@ for image in album:
         print(image.link)
         pyperclip.copy(image.link)
         break
-
+print(os.path.dirname(os.path.realpath(__file__)))
+os.system("mpv " + str(os.path.dirname(os.path.realpath(__file__))) + "/job-done.mp3")
